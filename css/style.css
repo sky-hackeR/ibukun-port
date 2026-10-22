@@ -762,6 +762,18 @@ body.home-page.light .home-details h1 .home-heading-name {
 
 .about .about-list .value {
   font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.about .about-list .email-value a {
+  color: inherit;
+  word-break: break-all;
+  transition: color 0.3s ease;
+}
+
+.about .about-list .email-value a:hover {
+  color: #ee6192;
 }
 
 .about-profile-summary {
@@ -874,6 +886,10 @@ body.home-page.light .home-details h1 .home-heading-name {
   margin: 0 0 50px;
 }
 
+.about .resume-box > ul > li:last-child {
+  margin-bottom: 20px;
+}
+
 .about .resume-box li:after {
   content: "";
   position: absolute;
@@ -937,6 +953,65 @@ body.home-page.light .home-details h1 .home-heading-name {
   left: 7px;
   top: 9px;
   opacity: .8;
+}
+
+.about .resume-box .resume-list {
+  margin: 10px 0 0 0;
+  padding: 0 0 0 18px;
+  list-style: disc !important;
+}
+
+.about .resume-box .resume-list li {
+  position: static !important;
+  padding: 0 !important;
+  margin: 0 0 8px 0 !important;
+  color: #eee;
+  font-size: 14px;
+  line-height: 1.6;
+  list-style-type: disc !important;
+  display: list-item !important;
+}
+
+.about .resume-box .resume-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.about .resume-box .resume-list li:after {
+  display: none !important;
+}
+
+body.light .about .resume-box .resume-list li {
+  color: #666;
+}
+
+.resume-section-heading {
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #252525;
+}
+
+.resume-section-heading h4 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume-section-heading h4 i {
+  color: #ee6192;
+  font-size: 19px;
+}
+
+body.light .resume-section-heading {
+  border-bottom: 1px solid #eee;
+}
+
+body.light .resume-section-heading h4 {
+  color: #333;
 }
 
 /* Skills */
