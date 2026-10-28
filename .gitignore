@@ -1,0 +1,7 @@
+# Logs and system artifacts
+*.log
+.system_generated/
+
+# OS metadata
+.DS_Store
+Thumbs.db
